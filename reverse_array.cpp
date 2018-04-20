@@ -9,7 +9,7 @@ using namespace std;
 
 int* reverseArray(int arr[], arr::size()){
 
-	int arr2[arr->size()];
+	int *arr2 = new int[arr->size()];
 
 	int inc;
 	for(int i = arr->size(); i >= 0; i--){
@@ -18,7 +18,7 @@ int* reverseArray(int arr[], arr::size()){
 
 	}
 
-	return *arr2;
+	return arr2;
 }
 
 int main(){
